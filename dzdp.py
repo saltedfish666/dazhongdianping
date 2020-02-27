@@ -71,7 +71,7 @@ def reviews_output(html_full_review):
     for i in reviews_items:
         # reviews = i.xpath("./div/div[@class='review-words Hide']")    #定位到目标元素
         # r = reviews[0].xpath('string(.)').strip()    #提取目标元素的文本内容，这两行也可以直接缩写为下面一行
-        #r = i.xpath("./div/div[@class='review-words Hide']")[0].xpath('string(.)').strip()
+        # r = i.xpath("./div/div[@class='review-words Hide']")[0].xpath('string(.)').strip()
         r = i.xpath("./div/div[@class='review-words Hide']/text()")
         for temp in r:
             with open('reviews.txt', 'a+', encoding='UTF-8') as f:
@@ -85,7 +85,7 @@ if __name__ == '__main__':
     n = 0
     # url = 'http://www.dianping.com/shop/18335920/review_all/p1'
     headers = {
-        'Cookie': '填上自己的cookie',
+        'Cookie': '填上自己的cookie',    #填写自己的cookie
         'host': 'www.dianping.com',
         'Upgrade-Insecure-Requests': '1',
         'User-Agent': UserAgent().random
