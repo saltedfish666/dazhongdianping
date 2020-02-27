@@ -17,7 +17,7 @@
     <session id="-455058963">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.5" value="1" />
@@ -50,13 +50,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dzdp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="9" column="49" lean-forward="true" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+            <state relative-caret-position="226">
+              <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
               <folding>
-                <element signature="e#206#221#0" expanded="true" />
                 <marker date="1582781607217" expanded="true" signature="594:596" ph="..." />
                 <marker date="1582781607217" expanded="true" signature="631:636" ph="..." />
                 <marker date="1582781607217" expanded="true" signature="934:2348" ph="..." />
@@ -67,26 +66,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="483">
               <caret line="59" column="67" lean-forward="true" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="67" />
               <folding>
                 <element signature="e#202#248#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="33" />
-              <folding>
-                <element signature="e#204#213#0" expanded="true" />
-                <marker date="1582773824773" expanded="true" signature="252:254" ph="..." />
               </folding>
             </state>
           </provider>
@@ -100,6 +86,9 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -116,7 +105,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="666" />
     <option name="width" value="1254" />
     <option name="height" value="1040" />
@@ -135,6 +124,7 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -267,15 +257,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="533" y="0" width="1003" height="832" extended-state="1" />
-    <editor active="true" />
+    <frame x="533" y="0" width="1003" height="832" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.1957672" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31428573" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31473532" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -310,32 +299,30 @@
           <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="33" />
           <folding>
             <element signature="e#204#213#0" expanded="true" />
-            <marker date="1582773824773" expanded="true" signature="252:254" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="59" column="67" lean-forward="true" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="67" />
-          <folding>
-            <element signature="e#202#248#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dzdp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="9" column="49" lean-forward="true" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+        <state relative-caret-position="226">
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
           <folding>
-            <element signature="e#206#221#0" expanded="true" />
             <marker date="1582781607217" expanded="true" signature="594:596" ph="..." />
             <marker date="1582781607217" expanded="true" signature="631:636" ph="..." />
             <marker date="1582781607217" expanded="true" signature="934:2348" ph="..." />
             <marker date="1582781607217" expanded="true" signature="2347:2348" ph="..." />
             <marker date="1582781607217" expanded="true" signature="2422:3110" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="59" column="67" lean-forward="true" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="67" />
+          <folding>
+            <element signature="e#202#248#0" expanded="true" />
           </folding>
         </state>
       </provider>
