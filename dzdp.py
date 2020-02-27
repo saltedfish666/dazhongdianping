@@ -85,7 +85,7 @@ if __name__ == '__main__':
     n = 0
     # url = 'http://www.dianping.com/shop/18335920/review_all/p1'
     headers = {
-        'Cookie': 'cy=4; cye=guangzhou; _lxsdk_cuid=17075fecc2a7d-012d477ae5fa96-4c302879-144000-17075fecc2bc8; _lxsdk=17075fecc2a7d-012d477ae5fa96-4c302879-144000-17075fecc2bc8; _hc.v=15503fd2-0489-9321-e379-d7ee36ab5d46.1582527598; dplet=4c5f24c2aef63c78f63f11f4816303fc; dper=680c7721cb3ab0bdf9606657b6762c9f264d43f65eb63500b751b18dccc47241b64ccdddbf11aa003901ed91959e2e9df4652fb2b0cdced78359723804e207c3fb5aa130aeb12a3b1c7b07f9248f4599bb048547261b38371fa0b9aa264e16e3; ua=dpuser_0196789228; ctu=05b472eca0e87267b3eda97d1073abb4a6b0385ada1685b06c5cf13643fc32d4; s_ViewType=10; aburl=1; __utma=1.1509819458.1582527777.1582527777.1582527777.1; __utmz=1.1582527777.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); ll=7fd06e815b796be3df069dec7836c3df; _lx_utm=utm_source%3DBaidu%26utm_medium%3Dorganic; _lxsdk_s=17080d6c36b-703-64f-c78%7C%7C281',
+        'Cookie': '',
         'host': 'www.dianping.com',
         'Upgrade-Insecure-Requests': '1',
         'User-Agent': UserAgent().random
