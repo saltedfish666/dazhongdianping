@@ -85,7 +85,7 @@ if __name__ == '__main__':
     n = 0
     # url = 'http://www.dianping.com/shop/18335920/review_all/p1'
     headers = {
-        'Cookie': '',
+        'Cookie': '填上自己的cookie',
         'host': 'www.dianping.com',
         'Upgrade-Insecure-Requests': '1',
         'User-Agent': UserAgent().random
