@@ -18,7 +18,6 @@ import time    #暂停程序，避免封号
 import random    #生成随机时间值
 
 def get_url_list():
-
     url_list = []
     for i in list(range(72)):  # 我所抓的评论一共72页，尚未完善自动化获取评论页数的代码
         url_list.append('http://www.dianping.com/shop/18335920/review_all/p' + str(i + 1))
@@ -64,28 +63,32 @@ def get_html_full_review(html, css_content, font_dic, y_list):
         html = html.replace('<svgmtsi class="' + font_key + '"></svgmtsi>', font_dic[pos_x + ',' + pos_y])
     return html
 
-def reviews_output(html_full_review):
+def reviews_output(html_full_review, flag):
     print('------开始提取评论并写入文件------')
     html = etree.HTML(html_full_review)
     reviews_items = html.xpath("//div[@class='reviews-items']/ul/li")
     for i in reviews_items:
-        # reviews = i.xpath("./div/div[@class='review-words Hide']")    #定位到目标元素
-        # r = reviews[0].xpath('string(.)').strip()    #提取目标元素的文本内容，这两行也可以直接缩写为下面一行
-        # r = i.xpath("./div/div[@class='review-words Hide']")[0].xpath('string(.)').strip()
+        r = []    #初始化数组
         r = i.xpath("./div/div[@class='review-words Hide']/text()")
-        for temp in r:
-            with open('reviews.txt', 'a+', encoding='UTF-8') as f:
-                f.write(temp)
-            f.close()
+        if r:
+            pass
+        else:
+            r = i.xpath("./div/div[@class='review-words']/text()")    #评论较短不需要展开的时候
+        flag += 1
+        #print(r)
+        #print('第' + str(flag) + '条评论：\n' + r[0].strip())
+        with open('reviews.txt', 'a+', encoding='UTF-8') as f:
+            f.write('第' + str(flag) + '条评论：\n' + r[0].strip() + '\n\n')
+        f.close()
     print('------写入完成，延迟10-25秒------')
     time.sleep(10 + 15 * random.random())
 
 if __name__ == '__main__':
     url_list = get_url_list()
-    n = 0
+    flag = 0    # 统计评论数量
     # url = 'http://www.dianping.com/shop/18335920/review_all/p1'
     headers = {
-        'Cookie': '填上自己的cookie',    #填写自己的cookie
+        'Cookie': '自己的cookie',
         'host': 'www.dianping.com',
         'Upgrade-Insecure-Requests': '1',
         'User-Agent': UserAgent().random
@@ -95,8 +98,19 @@ if __name__ == '__main__':
     css_content = get_css_content(res.text, headers)
     # 获取字体字典
     font_dic, y_list = get_font_dic(css_content)
-    for url in url_list:
-        print('------开始解析第' + str(n + 1) + '个网页------')
-        html_full_review = get_html_full_review(res.text, css_content, font_dic, y_list)
-        reviews_output(html_full_review)
-        n += 1
+    #解析第一个网页
+    print('------开始解析第1个网页------')
+    html_full_review = get_html_full_review(res.text, css_content, font_dic, y_list)
+    reviews_output(html_full_review, flag)
+    flag += 15
+    #解析从第二个网页开始的所有网页
+    for n in list(range(len(url_list)-1)):
+        print('------开始解析第' + str(n + 2) + '个网页------')
+        res = requests.get(url_list[n+1], headers=headers)
+        if res:
+            html_full_review = get_html_full_review(res.text, css_content, font_dic, y_list)
+            reviews_output(html_full_review, flag)
+            n += 1
+            flag += 15
+        else:
+            print('无法请求网页')
